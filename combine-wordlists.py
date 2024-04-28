@@ -8,6 +8,6 @@ a=vars(args)
 outstring=''
 for i in a["[input files]"]:
  with open(i) as file:
-  outstring+=file.read()+'\n'
+  outstring+=file.read()
 with open(a["[output file]"],'w') as file:
  file.write(outstring)
